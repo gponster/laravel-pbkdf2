@@ -1,0 +1,24 @@
+{
+    "name": "gponster/laravel-pbkdf2",
+    "type": "library",
+    "description": "Pbkdf2 hasher",
+    "keywords": ["Hashing", "Laravel", "Pbkdf2"],
+    "authors": [
+        {
+            "name": "Vu Dang a.k.a Gponster",
+            "email": "anhvudg@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.x"
+    },
+    "autoload": {
+	    "classmap": [
+	    ],
+        "psr-0": {
+            "Gponster\\Hashing": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
