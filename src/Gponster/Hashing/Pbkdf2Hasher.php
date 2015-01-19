@@ -120,7 +120,7 @@ class Pbkdf2Hasher implements \Illuminate\Hashing\HasherInterface {
 	 * @return string
 	 */
 	public static function hash($password, $options = null) {
-		$options = is_array($option) ? $options : array();
+		$options = is_array($options) ? $options : array();
 
 		$iterations = isset($options['iterations']) ? (int)$options['iterations'] : static::$DEFAULT_ITERATIONS;
 		$saltLen = isset($options['salt_len']) ? (int)$options['salt_len'] : static::$DEFAULT_SALT_LEN;
